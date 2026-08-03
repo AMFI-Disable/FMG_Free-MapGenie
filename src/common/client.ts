@@ -290,13 +290,11 @@ export class Client {
 
     XMLHttpRequest.prototype.send = function (this: any, body?: any) {
       if (this.__fmgMapId == null) return origSend.apply(this, arguments as any);
-
-      const xhr = this;
-      build(xhr.__fmgMapId)
+      build(this.__fmgMapId)
         .then((data) => {
           const text = JSON.stringify(data);
           const def = (key: string, value: unknown) =>
-            Object.defineProperty(xhr, key, { configurable: true, get: () => value });
+            Object.defineProperty(this, key, { configurable: true, get: () => value });
 
           def("readyState", 4);
           def("status", 200);
@@ -304,16 +302,16 @@ export class Client {
           def("responseText", text);
           def(
             "response",
-            xhr.responseType === "" || xhr.responseType === "text" ? text : data
+            this.responseType === "" || this.responseType === "text" ? text : data
           );
-          def("responseURL", xhr.__fmgUrl);
-          xhr.getAllResponseHeaders = () => "content-type: application/json\r\n";
-          xhr.getResponseHeader = (h: string) =>
+          def("responseURL", this.__fmgUrl);
+          this.getAllResponseHeaders = () => "content-type: application/json\r\n";
+          this.getResponseHeader = (h: string) =>
             /content-type/i.test(h) ? "application/json" : null;
 
-          xhr.dispatchEvent(new Event("readystatechange"));
-          xhr.dispatchEvent(new Event("load"));
-          xhr.dispatchEvent(new Event("loadend"));
+          this.dispatchEvent(new Event("readystatechange"));
+          this.dispatchEvent(new Event("load"));
+          this.dispatchEvent(new Event("loadend"));
         })
         .catch((err) => {
           logger.error(
@@ -321,7 +319,7 @@ export class Client {
             err
           );
           try {
-            origSend.call(xhr, body);
+            origSend.call(this, body);
           } catch {}
         });
     };

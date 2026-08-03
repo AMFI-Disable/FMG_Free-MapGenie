@@ -29,7 +29,7 @@ export class StorageEntry<T> {
   }
 
   public static get<T>(...keys: KeyPart[]): StorageEntry<T> {
-    const key = this.createKey(keys);
+    const key = StorageEntry.createKey(keys);
 
     if (!StorageEntry.entries.has(key)) {
       StorageEntry.entries.set(key, new StorageEntry<T>(key));

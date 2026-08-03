@@ -94,11 +94,10 @@ export class ConsoleLogTemplate {
    */
   private extractTags(): string[] {
     return this.tags
-      .map((tag) => [
+      .flatMap((tag) => [
         tag.style,
         typeof tag.value === "string" ? tag.value : tag.value(),
-      ])
-      .flat(1);
+      ]);
   }
 
   /**

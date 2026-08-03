@@ -1,6 +1,6 @@
 import { ExtensionSettings } from "@/common/extension/settings";
 
-import { RulesManager } from "./manager";
+import type { RulesManager } from "./manager";
 import { DeclarativeNetRequestManager } from "./declarativenetrequest";
 import { WebRequestManager } from "./webrequest";
 

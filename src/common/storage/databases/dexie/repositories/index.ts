@@ -1,4 +1,4 @@
-import { Dexie } from "dexie";
+import type { Dexie } from "dexie";
 
 import { LocationsRepositoryV1 } from "./locations";
 import { CategoriesRepositoryV1 } from "./categories";

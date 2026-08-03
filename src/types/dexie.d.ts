@@ -24,5 +24,3 @@ module "dexie" {
 
   export default Dexie;
 }
-
-export {};

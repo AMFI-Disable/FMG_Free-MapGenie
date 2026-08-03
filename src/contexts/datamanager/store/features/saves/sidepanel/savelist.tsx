@@ -23,5 +23,5 @@ export const SaveList = ({}: SaveList.Props) => {
 };
 
 namespace SaveList {
-  export interface Props {}
+  export type Props = {}
 }

@@ -13,5 +13,5 @@ export const SidePanel = ({}: SidePanel.Props) => {
 };
 
 namespace SidePanel {
-  export interface Props {}
+  export type Props = {}
 }

@@ -52,5 +52,5 @@ export const SaveView = ({}: SaveView.Props) => {
 };
 
 namespace SaveView {
-  export interface Props {}
+  export type Props = {}
 }

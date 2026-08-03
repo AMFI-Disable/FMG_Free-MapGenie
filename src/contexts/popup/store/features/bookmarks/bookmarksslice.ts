@@ -4,7 +4,7 @@ import { toastr } from "react-redux-toastr";
 
 import type { Bookmark as BookmarkInfo } from "@/common/bookmark";
 
-export { BookmarkInfo };
+export type { BookmarkInfo };
 
 export interface BookmarksState {
   list: BookmarkInfo[];

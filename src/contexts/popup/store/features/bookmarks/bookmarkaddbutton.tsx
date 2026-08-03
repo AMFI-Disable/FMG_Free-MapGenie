@@ -18,5 +18,5 @@ export const BookmarkAddButton = ({}: BookmarkAddButton.Props) => {
 };
 
 export namespace BookmarkAddButton {
-  export interface Props {}
+  export type Props = {}
 }

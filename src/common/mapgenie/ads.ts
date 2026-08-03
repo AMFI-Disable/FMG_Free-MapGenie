@@ -32,18 +32,18 @@ export default class MapgenieAdBlocker {
   ): boolean {
     return elements.reduce((acc, el) => {
       if (Array.isArray(el)) {
-        return acc || this.removeElements.apply(this, el);
+        return acc || MapgenieAdBlocker.removeElements.apply(MapgenieAdBlocker, el);
       }
-      return acc || this.removeElement(el);
+      return acc || MapgenieAdBlocker.removeElement(el);
     }, false);
   }
 
   private static removeIframeAds() {
-    return this.removeElements('iframe[name^="ifrm_"]');
+    return MapgenieAdBlocker.removeElements('iframe[name^="ifrm_"]');
   }
 
   private static removeGoogleAds() {
-    return this.removeElements(
+    return MapgenieAdBlocker.removeElements(
       'iframe[name*="goog"]',
       'div[class^="adsbygoogle"]',
       'div[id^="google_ads_iframe_"]',
@@ -52,78 +52,78 @@ export default class MapgenieAdBlocker {
   }
 
   private static removeNitroAds() {
-    return this.removeElements("#nitro-floating-wrapper");
+    return MapgenieAdBlocker.removeElements("#nitro-floating-wrapper");
   }
 
   private static removeBodyAds() {
-    return this.removeElements(
+    return MapgenieAdBlocker.removeElements(
       'html > iframe[sandbox="allow-scripts allow-same-origin"]'
     );
   }
 
   private static removeUpgradeProAd() {
-    return this.removeElements("#blobby-left");
+    return MapgenieAdBlocker.removeElements("#blobby-left");
   }
 
   private static removeUpgradeProButton() {
-    return this.removeElements("#button-upgrade");
+    return MapgenieAdBlocker.removeElements("#button-upgrade");
   }
 
   private static removeBlueKai() {
-    return this.removeElements('iframe[name="__bkframe"]');
+    return MapgenieAdBlocker.removeElements('iframe[name="__bkframe"]');
   }
 
   private static removePrivacyPopupElement() {
-    return this.removeElements("#onetrust-consent-sdk");
+    return MapgenieAdBlocker.removeElements("#onetrust-consent-sdk");
   }
 
   private static removeAds() {
     return [
-      this.removeUpgradeProAd(),
-      this.removeUpgradeProButton(),
-      this.removeIframeAds(),
-      this.removeGoogleAds(),
-      this.removeNitroAds(),
-      this.removeBodyAds(),
-      this.removeBlueKai(),
+      MapgenieAdBlocker.removeUpgradeProAd(),
+      MapgenieAdBlocker.removeUpgradeProButton(),
+      MapgenieAdBlocker.removeIframeAds(),
+      MapgenieAdBlocker.removeGoogleAds(),
+      MapgenieAdBlocker.removeNitroAds(),
+      MapgenieAdBlocker.removeBodyAds(),
+      MapgenieAdBlocker.removeBlueKai(),
     ].some((x) => x);
   }
 
   private static tick() {
-    const adsRemoved = this.removeAds();
+    const adsRemoved = MapgenieAdBlocker.removeAds();
 
     if (adsRemoved) {
-      this.lastAdRemovedAt = Date.now();
+      MapgenieAdBlocker.lastAdRemovedAt = Date.now();
     }
 
     const now = Date.now();
-    const elapsed = now - this.lastAdRemovedAt;
+    const elapsed = now - MapgenieAdBlocker.lastAdRemovedAt;
 
-    if (elapsed > this.TIMEOUT) {
+    if (elapsed > MapgenieAdBlocker.TIMEOUT) {
       logger.debug(
-        `AdBlocker stopped after ${this.TIMEOUT}ms of no ads being removed.`
+        `AdBlocker stopped after ${MapgenieAdBlocker.TIMEOUT}ms of no ads being removed.`
       );
-      this.stop();
+      MapgenieAdBlocker.stop();
       return;
     }
   }
 
   private static stop() {
-    if (!this.handle) return;
-    window.clearInterval(this.handle);
-    this.handle = null;
+    if (!MapgenieAdBlocker.handle) return;
+    window.clearInterval(MapgenieAdBlocker.handle);
+    MapgenieAdBlocker.handle = null;
   }
 
   public static start() {
-    if (this.handle != null) return;
-    this.handle = window.setInterval(
-      () => this.tick(),
-      this.REMOVE_CHECK_INTERVAL
+    if (MapgenieAdBlocker.handle != null) return;
+    MapgenieAdBlocker.handle = window.setInterval(
+      () => MapgenieAdBlocker.tick(),
+      MapgenieAdBlocker.REMOVE_CHECK_INTERVAL
     );
   }
 
   public static cancel() {
-    this.stop();
+    MapgenieAdBlocker.stop();
   }
 
   /**
@@ -133,7 +133,7 @@ export default class MapgenieAdBlocker {
     if (!import.meta.env.DEV) return;
 
     try {
-      await waitUntil(() => !!this.removePrivacyPopupElement());
+      await waitUntil(() => !!MapgenieAdBlocker.removePrivacyPopupElement());
     } catch {
       // Ignore timeout
     }

@@ -1,13 +1,13 @@
-import { UserData } from "../../format";
+import type { UserData } from "../../format";
 import {
-  LocationModelV1,
-  CategoryModelV1,
+  type LocationModelV1,
+  type CategoryModelV1,
   PresetsRepositoryV1,
-  PresetModelV1,
-  PresetOrderModelV1,
+  type PresetModelV1,
+  type PresetOrderModelV1,
   NotesRepositoryV1,
-  NoteModelV1,
-  Repositories,
+  type NoteModelV1,
+  type Repositories,
 } from "./repositories";
 
 export interface Exported {

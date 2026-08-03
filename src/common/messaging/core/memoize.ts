@@ -15,7 +15,7 @@ type GetMemeoizeOptionsResult<T> = T extends (...args: any[]) => any
 export function Memoize<F extends (...args: any) => any, CacheKeyType = any>(
   options?: MemoizeOptions<F, CacheKeyType>
 ) {
-  return function (f: PossibleMemoizeFunction<F>) {
+  return (f: PossibleMemoizeFunction<F>) => {
     f[MemoizeSymbol] = options ?? {};
   };
 }

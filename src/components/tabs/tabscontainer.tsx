@@ -1,4 +1,4 @@
-import { TabView } from "./tabview";
+import type { TabView } from "./tabview";
 import { Tab } from "./tab";
 
 import style from "./tabs.module.scss";

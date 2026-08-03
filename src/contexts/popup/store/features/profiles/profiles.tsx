@@ -52,5 +52,5 @@ export const Profiles = ({}: Profiles.Props) => {
 };
 
 export namespace Profiles {
-  export interface Props {}
+  export type Props = {}
 }

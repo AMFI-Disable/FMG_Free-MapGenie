@@ -14,7 +14,7 @@ export class BrowserUtils {
   }
 
   public static async getActiveTabId() {
-    const tab = await this.getActiveTab();
+    const tab = await BrowserUtils.getActiveTab();
     return tab?.id;
   }
 
@@ -22,8 +22,8 @@ export class BrowserUtils {
     if (browser && "runtime" in browser) {
       return browser.runtime.getURL(path);
     }
-    this.extension ??= extensionService.use();
-    return this.extension.getURL(path);
+    BrowserUtils.extension ??= extensionService.use();
+    return BrowserUtils.extension.getURL(path);
   }
 
   public static async getCssUrl() {
@@ -32,7 +32,7 @@ export class BrowserUtils {
         `/content-scripts/${import.meta.env.ENTRYPOINT}.css`
       );
     }
-    return this.getURL(`/assets/${import.meta.env.ENTRYPOINT}.css`);
+    return BrowserUtils.getURL(`/assets/${import.meta.env.ENTRYPOINT}.css`);
   }
 }
 

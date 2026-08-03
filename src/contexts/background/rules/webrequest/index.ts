@@ -1,4 +1,4 @@
-import { RulesManager } from "../manager";
+import type { RulesManager } from "../manager";
 import { WebRequestRule } from "./rule";
 
 import type { Rule } from "../types";

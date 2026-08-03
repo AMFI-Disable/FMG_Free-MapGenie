@@ -1,4 +1,4 @@
-import { CustomSetting } from "./customsettings";
+import type { CustomSetting } from "./customsettings";
 
 import style from "./setting.module.scss";
 

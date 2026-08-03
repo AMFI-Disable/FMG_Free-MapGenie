@@ -131,7 +131,7 @@ export class BaseMessenger {
   public async createResponseHandler(
     messageId: string,
     type: MessageType,
-    handler: <T extends any>(data?: T, error?: any) => void
+    handler: <T>(data?: T, error?: any) => void
   ) {
     const offMessage = await this.onMessage((message) => {
       if (message.type !== type) return;

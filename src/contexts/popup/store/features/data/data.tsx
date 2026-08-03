@@ -94,5 +94,5 @@ export const Data = ({}: Data.Props) => {
 };
 
 namespace Data {
-  export interface Props {}
+  export type Props = {}
 }

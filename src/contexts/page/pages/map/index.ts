@@ -148,7 +148,7 @@ export class MapPage extends Page {
     if (window.config?.altMapSdk) {
       window.google = window.google || {};
       window.google.maps = window.google.maps || {
-        Size: function () {},
+        Size: () => {},
       };
     }
   }

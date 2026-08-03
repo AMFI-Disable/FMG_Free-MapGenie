@@ -1,4 +1,4 @@
-import { Client } from "@/common/client";
+import type { Client } from "@/common/client";
 import { createService } from "@/common/messaging";
 
 export class ClientService {

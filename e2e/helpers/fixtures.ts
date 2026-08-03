@@ -2,7 +2,7 @@ import path from "node:path";
 import fs from "node:fs";
 import {
   test as base,
-  StorageState,
+  type StorageState,
   type BrowserContext,
 } from "@playwright/test";
 import { fullLists, PlaywrightBlocker } from "@ghostery/adblocker-playwright";

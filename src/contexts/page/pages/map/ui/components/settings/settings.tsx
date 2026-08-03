@@ -27,5 +27,5 @@ export class Settings extends IntegratedComponent<Setting.Props> {
 }
 
 namespace Setting {
-  export interface Props {}
+  export type Props = {}
 }

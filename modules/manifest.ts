@@ -4,7 +4,7 @@ import { defineWxtModule } from "wxt/modules";
 export default defineWxtModule({
   setup(wxt) {
     const generateEntrypointName = (file: string) => {
-      return file.replaceAll(/[\/\\]/g, "-").replace(/\.[^/.]+$/, "");
+      return file.replaceAll(/[/\\]/g, "-").replace(/\.[^/.]+$/, "");
     };
 
     wxt.hook("build:manifestGenerated", (wxt, manifest) => {

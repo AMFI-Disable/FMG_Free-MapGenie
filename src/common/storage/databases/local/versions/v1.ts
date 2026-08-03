@@ -1,4 +1,4 @@
-import { Version } from "./version";
+import type { Version } from "./version";
 import { V1MigratorHelper } from "./helpers/v1migratorhelper";
 
 import type { LocalV1Data } from "./v1.schema";

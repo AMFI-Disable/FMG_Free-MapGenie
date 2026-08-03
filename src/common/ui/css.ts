@@ -47,7 +47,7 @@ export class CssHelper {
       return css.textContent;
     }
     if (Array.isArray(css.url)) {
-      return this.mergeCssUrls(css.url);
+      return CssHelper.mergeCssUrls(css.url);
     }
     const res = await fetch(css.url);
     return res.text();
@@ -60,10 +60,10 @@ export class CssHelper {
     documentCss: string;
     shadowCss: string;
   }> {
-    const cssText = await this.fetchCss(css);
+    const cssText = await CssHelper.fetchCss(css);
     if (!cssText) return { documentCss: "", shadowCss: "" };
     if (split) {
-      return this.splitShadowRootCss(cssText);
+      return CssHelper.splitShadowRootCss(cssText);
     }
     return { documentCss: cssText, shadowCss: "" };
   }

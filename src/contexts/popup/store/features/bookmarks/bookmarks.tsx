@@ -109,5 +109,5 @@ export const Bookmarks = ({}: Bookmarks.Props) => {
 };
 
 export namespace Bookmarks {
-  export interface Props {}
+  export type Props = {}
 }

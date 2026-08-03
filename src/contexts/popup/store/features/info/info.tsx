@@ -27,5 +27,5 @@ export const Info = ({}: Info.Props) => {
 };
 
 export namespace Info {
-  export interface Props {}
+  export type Props = {}
 }

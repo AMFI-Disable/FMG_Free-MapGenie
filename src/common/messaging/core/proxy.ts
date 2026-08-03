@@ -1,6 +1,6 @@
 import { ProviderMessenger } from "./messengers/provider";
 import { UserMessenger } from "./messengers/user";
-import { MessengerOptions } from "./messengers/base";
+import type { MessengerOptions } from "./messengers/base";
 import { getMemoizeOptions, applyMemoize } from "./memoize";
 
 import type { Adapter } from "./adapter";

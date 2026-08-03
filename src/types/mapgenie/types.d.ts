@@ -176,7 +176,7 @@ declare namespace MG {
     center_y: Nullable<Float>;
   }
 
-  declare interface Route {}
+  declare type Route = {}
 
   declare type HeatmapDisplayType = "marker";
 

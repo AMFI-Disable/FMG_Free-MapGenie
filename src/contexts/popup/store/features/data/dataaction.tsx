@@ -1,5 +1,5 @@
 import { useAppDispatch } from "@/contexts/dataManager/hooks";
-import { AsyncThunk } from "@reduxjs/toolkit";
+import type { AsyncThunk } from "@reduxjs/toolkit";
 import { Button } from "@/components/Button";
 
 import style from "./data.module.scss";

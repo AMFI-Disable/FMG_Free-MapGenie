@@ -1,4 +1,4 @@
-import { WebRequestRuleAction } from "./actions/rule";
+import type { WebRequestRuleAction } from "./actions/rule";
 import { WebRequestBlockAction } from "./actions/block";
 import { WebRequestModifyHeadersAction } from "./actions/modifyheaders";
 import { WebRequestRuleCondition } from "./condition";
