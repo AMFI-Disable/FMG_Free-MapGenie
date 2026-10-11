@@ -15,7 +15,7 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
 > [!WARNING]
 > FMG V3 is actively under development and uses a new data saving approach. Do not clone and use this branch without a backup as there is a possibility of data corruption or loss.
 
-## ✨ Pro Features unlock state
+## ✨ Pro Features Unlock State
 
 | Feature               | Unlocked |
 | --------------------- | -------- |
@@ -28,7 +28,7 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
 | **heatmaps**          | ✔️       |
 | **guides**            | ✔️       |
 
-## 🚀 What's New in V3 for developers
+## 🚀 What's New In V3 For Developers
 
 ### Build System & Development
 
