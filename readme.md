@@ -1,12 +1,29 @@
-<p align="center">
-    <img src="./assets/logo.png" />
-    <h1 align="center">FMG: Free <a href="https://mapgenie.io">Mapgenie</a> PRO!</h1>
-</p>
+# 🧩 FMG - Free [Mapgenie](https://mapgenie.io) PRO
 
-<p align="center">
-    <strong>🚧 FMG V3 - Work in Progress 🚧</strong>
-    <br/>
-</p>
+<div align="center">
+
+<img src="./assets/logo.png" alt="FMG Logo" />
+
+<p>🚧 FMG V3 - Work In Progress 🚧</p>
+
+[![Browser: Chrome / Firefox](https://img.shields.io/badge/Browser-Chrome%20%7C%20Firefox-blue.svg?style=flat-square&logo=googlechrome)](https://google.com/chrome)
+[![Framework: WXT](https://img.shields.io/badge/Framework-WXT-orange.svg?style=flat-square)](https://wxt.dev)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
+[![Privacy: Client-Side Dexie](https://img.shields.io/badge/Privacy-100%25%20Client--Side%20Dexie-purple.svg?style=flat-square)](#about)
+
+</div>
+
+---
+
+## ⚖️ Educational & Fair-Play Disclaimer
+
+> [!CAUTION]
+> **IMPORTANT NOTICE & DISCLAIMER**:
+> This codebase is provided strictly for educational, research, and personal productivity testing purposes.
+> Always comply with target platform terms of service and acceptable use policies.
+> The developers and contributors accept no responsibility or liability for account penalties or platform policy violations.
+
+---
 
 ## About
 
@@ -61,7 +78,7 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
 
 ## 📁 Project Structure
 
-```
+```text
 ├── src/
 │   ├── common/          # Shared utilities and modules
 │   │   ├── axios/       # Axios related utils and interceptor
@@ -76,6 +93,12 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
 ├── e2e/                 # End-to-end tests
 └── public/              # Public assets
 ```
+
+---
+
+## 📄 License And Terms
+
+Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
 
 ---
 
