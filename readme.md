@@ -1,4 +1,4 @@
-# 🧩 FMG - Free [Mapgenie](https://mapgenie.io) PRO
+# 🧩 FMG - Free [MapGenie](https://mapgenie.io) PRO
 
 <div align="center">
 
@@ -25,14 +25,14 @@
 
 ---
 
-## About
+## ⚡ Overview And Core Value <a id="about"></a>
 
 FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](https://mapgenie.io) experience by unlocking PRO features for free. Version 3 is a complete rewrite from scratch.
 
 > [!WARNING]
 > FMG V3 is actively under development and uses a new data saving approach. Do not clone and use this branch without a backup as there is a possibility of data corruption or loss.
 
-## ✨ Pro Features Unlock State
+## ✨ PRO Features Unlock State
 
 | Feature               | Unlocked |
 | --------------------- | -------- |
