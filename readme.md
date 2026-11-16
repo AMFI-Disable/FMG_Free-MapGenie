@@ -1,10 +1,10 @@
-# 🧩 FMG - Free [MapGenie](https://mapgenie.io) PRO
-
 <div align="center">
+
+# FMG - Free [MapGenie](https://mapgenie.io) PRO
 
 <img src="./assets/logo.png" alt="FMG Logo" />
 
-<p>🚧 FMG V3 - Work In Progress 🚧</p>
+<p> FMG V3 - Work In Progress </p>
 
 [![Browser: Chrome / Firefox](https://img.shields.io/badge/Browser-Chrome%20%7C%20Firefox-blue.svg?style=flat-square&logo=googlechrome)](https://google.com/chrome)
 [![Framework: WXT](https://img.shields.io/badge/Framework-WXT-orange.svg?style=flat-square)](https://wxt.dev)
@@ -15,7 +15,7 @@
 
 ---
 
-## ⚖️ Educational & Fair-Play Disclaimer
+## Educational & Fair-Play Disclaimer
 
 > [!CAUTION]
 > **IMPORTANT NOTICE & DISCLAIMER**:
@@ -25,27 +25,27 @@
 
 ---
 
-## ⚡ Overview And Core Value <a id="about"></a>
+## Overview And Core Value <a id="about"></a>
 
 FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](https://mapgenie.io) experience by unlocking PRO features for free. Version 3 is a complete rewrite from scratch.
 
 > [!WARNING]
 > FMG V3 is actively under development and uses a new data saving approach. Do not clone and use this branch without a backup as there is a possibility of data corruption or loss.
 
-## ✨ PRO Features Unlock State
+## PRO Features Unlock State
 
-| Feature               | Unlocked |
-| --------------------- | -------- |
-| **locations**         | ✔️       |
-| **track categories**  | ✔️       |
-| **presets**           | ✔️       |
-| **notes**             | ✔️       |
-| **tarkov quest tool** | ✔️       |
-| **pro maps**          | ✔️       |
-| **heatmaps**          | ✔️       |
-| **guides**            | ✔️       |
+| Feature | Unlocked |
+| :--- | :--- |
+| **locations** | Yes |
+| **track categories** | Yes |
+| **presets** | Yes |
+| **notes** | Yes |
+| **tarkov quest tool** | Yes |
+| **pro maps** | Yes |
+| **heatmaps** | Yes |
+| **guides** | Yes |
 
-## 🚀 What's New In V3 For Developers
+## What's New In V3 For Developers
 
 ### Build System & Development
 
@@ -76,7 +76,7 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
   - Handles locations, categories, presets, and notes automatically
   - Cleaner map and guide scripts
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ├── src/
@@ -96,12 +96,12 @@ FMG (Free Map Genie) is a browser extension that enhances the [Mapgenie.io](http
 
 ---
 
-## 📄 License And Terms
+## License And Terms
 
 Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
 
 ---
 
 <p align="center">
-    Made with ❤️ by <a href="https://github.com/V1P3R-FMG">V1P3R</a>
+    Made with  by <a href="https://github.com/V1P3R-FMG">V1P3R</a>
 </p>
