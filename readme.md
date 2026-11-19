@@ -11,6 +11,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](license)
 [![Privacy: Client-Side Dexie](https://img.shields.io/badge/Privacy-100%25%20Client--Side%20Dexie-purple.svg?style=flat-square)](#about)
 
+[Changelog](changelog.md) · [Security Policy](security.md) · [MIT License](license)
+
 </div>
 
 ---
