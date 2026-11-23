@@ -4,6 +4,14 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ---
 
+## [Unreleased]
+
+### Changed
+
+- Restored the Star History chart section and links in `readme.md`.
+
+---
+
 ## [3.0.0] - Modern Extension Architecture Rewrite (V3)
 
 ### Added
