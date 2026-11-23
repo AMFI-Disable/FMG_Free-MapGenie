@@ -17,6 +17,18 @@
 
 ---
 
+## Star History
+
+<a href="https://www.star-history.com/?type=date&repos=amfi-disable%2Ffmg_free-mapgenie">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Ffmg_free-mapgenie&type=date&theme=dark&legend=top-left" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=amfi-disable%2Ffmg_free-mapgenie&type=date&legend=top-left" />
+    <img alt="AMFI-Disable/FMG_Free-MapGenie Star History Chart" src="https://api.star-history.com/chart?repos=amfi-disable%2Ffmg_free-mapgenie&type=date&legend=top-left" />
+  </picture>
+</a>
+
+---
+
 ## Educational & Fair-Play Disclaimer
 
 > [!CAUTION]
@@ -107,15 +119,3 @@ Licensed under the [MIT License](license). Copyright (c) 2026 AMFI-Disable.
 <p align="center">
     Made with  by <a href="https://github.com/V1P3R-FMG">V1P3R</a>
 </p>
-
----
-
-## Star History
-
-<a href="https://www.star-history.com/#AMFI-Disable/FMG_Free-MapGenie&Date">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/FMG_Free-MapGenie&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=AMFI-Disable/FMG_Free-MapGenie&type=Date" />
-    <img alt="AMFI-Disable/FMG_Free-MapGenie Star History Chart" src="https://api.star-history.com/svg?repos=AMFI-Disable/FMG_Free-MapGenie&type=Date" />
-  </picture>
-</a>
