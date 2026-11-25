@@ -6,6 +6,10 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+### Fixed
+
+- Updated Playwright fixture paths in `e2e/helpers/fixtures.ts` to lowercase `userdata.v1.expected.json` and `userdata.v2.expected.json`.
+
 ### Changed
 
 - Restored the Star History chart section and links in `readme.md`.
