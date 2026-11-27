@@ -6,6 +6,8 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+- Updated Handlebars, proxy-addr and shell-quote in the Yarn dependency lock to address critical dependency advisories.
+
 ### Documentation
 
 - Added Simplified Chinese project and contribution guides and bilingual feedback templates.
