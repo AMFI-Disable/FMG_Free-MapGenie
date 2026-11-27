@@ -6,6 +6,11 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+### Documentation
+
+- Added Simplified Chinese project and contribution guides and bilingual feedback templates.
+
+
 ### Fixed
 
 - Updated Playwright fixture paths in `e2e/helpers/fixtures.ts` to lowercase `userdata.v1.expected.json` and `userdata.v2.expected.json`.

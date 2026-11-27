@@ -2,6 +2,8 @@
 
 # FMG - Free [MapGenie](https://mapgenie.io) PRO
 
+[中文文档](readme.zh-cn.md) · [Contributing](contributing.md)
+
 <img src="./assets/logo.png" alt="FMG Logo" />
 
 <p> FMG V3 - Work In Progress </p>
