@@ -46,7 +46,7 @@
     "react-redux": "^9.2.0",
     "react-redux-toastr": "^8.0.0",
     "usehooks-ts": "^3.1.1",
-    "zod": "^4.3.5"
+    "zod": "^4.6.6"
   },
   "devDependencies": {
     "@ghostery/adblocker-playwright": "^2.13.3",
