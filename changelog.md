@@ -6,6 +6,8 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+- Updated the XML parser, archive handlers, temporary files, UUIDs and filename matching used by the font and browser build tools. Scoped dependency overrides to the affected callers.
+
 ### Documentation
 
 - Added Simplified Chinese project and contribution guides and bilingual feedback templates.

@@ -22,7 +22,14 @@
   "resolutions": {
     "handlebars": "4.7.10",
     "proxy-addr": "2.0.8",
-    "shell-quote": "1.12.0"
+    "shell-quote": "1.12.0",
+    "**/svg2ttf/@xmldom/xmldom": "0.8.15",
+    "**/node-gyp/tar": "7.5.24",
+    "**/cacache/tar": "7.5.24",
+    "**/web-ext-run/tmp": "0.2.7",
+    "**/firefox-profile/adm-zip": "0.6.1",
+    "**/node-notifier/uuid": "11.1.1",
+    "**/wxt/minimatch": "11.0.9"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",
