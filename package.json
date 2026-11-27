@@ -22,7 +22,7 @@
   "resolutions": {
     "handlebars": "4.7.10",
     "proxy-addr": "2.0.8",
-    "shell-quote": "1.8.4"
+    "shell-quote": "1.12.0"
   },
   "dependencies": {
     "@dnd-kit/core": "^6.3.1",

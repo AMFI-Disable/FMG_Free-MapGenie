@@ -6,6 +6,8 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+- Updated shell-quote to 1.12.0 after the refreshed dependency graph exposed a further advisory affecting 1.8.4.
+
 - Updated Handlebars, proxy-addr and shell-quote in the Yarn dependency lock to address critical dependency advisories.
 
 ### Documentation
