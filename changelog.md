@@ -6,19 +6,15 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
-- Refreshed vulnerable locked dependencies within their requested version ranges, including Axios, Vite and node-forge.
-
-- Updated shell-quote to 1.12.0 after the refreshed dependency graph exposed a further advisory affecting 1.8.4.
-
-- Updated Handlebars, proxy-addr and shell-quote in the Yarn dependency lock to address critical dependency advisories.
-
 ### Documentation
 
 - Added Simplified Chinese project and contribution guides and bilingual feedback templates.
 
-
 ### Fixed
 
+- Refreshed vulnerable locked dependencies within their requested version ranges, including Axios, Vite and node-forge.
+- Updated shell-quote to 1.12.0 after the refreshed dependency graph exposed a further advisory affecting 1.8.4.
+- Updated Handlebars, proxy-addr and shell-quote in the Yarn dependency lock to address critical dependency advisories.
 - Updated Playwright fixture paths in `e2e/helpers/fixtures.ts` to lowercase `userdata.v1.expected.json` and `userdata.v2.expected.json`.
 
 ### Changed
