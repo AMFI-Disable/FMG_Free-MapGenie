@@ -55,7 +55,7 @@
   "background": {
     "service_worker": "background.js"
   },
-  "version": "2.1.1",
+  "version": "3.0.0",
   "description": "MapGenie PRO Unlocker",
   "author": "V1P3R",
   "name": "FMG"
