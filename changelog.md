@@ -6,7 +6,11 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 
 ## [Unreleased]
 
+### Changed
+
+- Aligned `manifest.json` version (`3.0.0`) with `package.json`.
 - Updated the XML parser, archive handlers, temporary files, UUIDs and filename matching used by the font and browser build tools. Scoped dependency overrides to the affected callers.
+- Restored the Star History chart section and links in `readme.md`.
 
 ### Documentation
 
@@ -18,10 +22,6 @@ All notable changes, architectural updates, and release history for FMG (Free Ma
 - Updated shell-quote to 1.12.0 after the refreshed dependency graph exposed a further advisory affecting 1.8.4.
 - Updated Handlebars, proxy-addr and shell-quote in the Yarn dependency lock to address critical dependency advisories.
 - Updated Playwright fixture paths in `e2e/helpers/fixtures.ts` to lowercase `userdata.v1.expected.json` and `userdata.v2.expected.json`.
-
-### Changed
-
-- Restored the Star History chart section and links in `readme.md`.
 
 ---
 
